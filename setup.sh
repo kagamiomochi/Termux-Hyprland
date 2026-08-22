@@ -1,3 +1,5 @@
+#!/bin/bash
+
 touch ~/.hushlogin
 pkg update -y
 apt -o Dpkg::Options::="--force-confold" upgrade -y
