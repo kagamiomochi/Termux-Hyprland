@@ -1,5 +1,5 @@
 # Termux-Hyprland
-##インストール
+## インストール
 
 ```
 curl -fsSL https://raw.githubusercontent.com/kagamiomochi/Termux-Hyprland/main/setup.sh | bash
