@@ -9,6 +9,7 @@ pkg install -y proot-distro
 proot-distro install heywoodlh/archlinux --override-alias archlinux
 
 echo "exec proot-distro login archlinux --user kagamimochi" >> ~/.bashrc
+
 proot-distro login archlinux -- bash -c "pacman -Syu --noconfirm sudo nano && \
 useradd -m kagamimochi && \
 echo 'kagamimochi ALL=(ALL:ALL) ALL' > /etc/sudoers.d/kagamimochi && \
