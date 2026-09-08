@@ -24,7 +24,6 @@ EOF
 chown user:user /home/user/.bashrc
 '
 
-# ※Termux環境に戻りたい場合は、起動時に Ctrl + C を押すか、Arch Linux内で「logout」してください
 echo 'echo "Press Ctrl+C to cancel Arch Linux login..." && sleep 2 && exec proot-distro login archlinux --user user' >> ~/.bashrc
 
 exit
