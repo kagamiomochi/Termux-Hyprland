@@ -5,7 +5,8 @@ touch ~/.hushlogin
 pkg update -y
 apt -o Dpkg::Options::="--force-confold" upgrade -y
 
-pkg install -y proot-distro
+pkg install -y x11-repo
+pkg install -y termux-x11-nightly proot-distro
 proot-distro install heywoodlh/archlinux --override-alias archlinux
 
 proot-distro login archlinux -- bash -c '
