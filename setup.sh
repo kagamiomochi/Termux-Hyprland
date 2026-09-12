@@ -22,6 +22,7 @@ cat << "EOF" > /home/user/.bashrc
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 mkdir -p "$XDG_RUNTIME_DIR"
 chmod 700 "$XDG_RUNTIME_DIR"
+export DISPLAY=:0
 EOF
 chown user:user /home/user/.bashrc
 '
