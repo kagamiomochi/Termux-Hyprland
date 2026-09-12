@@ -27,6 +27,11 @@ EOF
 chown user:user /home/user/.bashrc
 '
 
-echo 'echo "Press Ctrl+C to cancel Arch Linux login..." && sleep 2 && clear && exec proot-distro login archlinux --shared-tmp --user user' >> ~/.bashrc
+cat << "EOF" > .bashrc
+echo "Press Ctrl+C to cancel Arch Linux login..."
+sleep 2
+clear
+exec proot-distro login archlinux --shared-tmp --user user
+EOF
 
 exit
